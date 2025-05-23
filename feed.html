@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="/cssfiles/feed.css" />
+</head>
+
+<body>
+    <!-- Background Layers -->
+    <div class="background-layer"></div>
+    <div class="particles"></div>
+
+    <!-- Feedback Form -->
+    <h1 style="color: black;">Portfolio Feedback Form</h1>
+    <p>We value your feedback! Please share your thoughts below.</p>
+
+    <div class="form-container">
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <div class="error" id="nameError"></div>
+
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <div class="error" id="emailError"></div>
+
+            <textarea id="feedback" placeholder="Your feedback here..." rows="4" required></textarea>
+            <div class="error" id="feedbackError"></div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script src="/feed.js"></script>
+</body>
+
+</html>
